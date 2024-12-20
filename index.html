@@ -4,15 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Lora&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Welcome to My Portfolio</h1>
-  <p>This is my personal website.</p>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h1>About Me</h1>
+    <p>Hello, I am a passionate developer specializing in web technologies.</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <img src="project-image.jpg" alt="Project">
+      <h3>Project Title</h3>
+      <p>Short description of the project.</p>
+      <a href="https://github.com/yourusername/project">View on GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Your Name | <a href="mailto:your-email@example.com">Contact</a></p>
+  </footer>
 </body>
 </html>
-@media screen and (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-}
