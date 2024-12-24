@@ -1,88 +1,84 @@
-/* Global Styles */
-* {
+/* Define Color Variables */
+:root {
+    --primary-color: #2c3e50;        /* Dark Blue */
+    --secondary-color: #16a085;      /* Teal */
+    --accent-color: #e74c3c;         /* Red */
+    --background-color: #f4f7fc;     /* Light Grey */
+    --text-color: #333333;           /* Dark Grey for text */
+    --link-color: #3498db;           /* Blue for links */
+}
+
+/* Apply color scheme throughout the site */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
-/* Body Styles */
-body {
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
-}
-
-/* Header Styles */
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
     text-align: center;
-    border-radius: 8px;
 }
 
 header h1 {
-    font-size: 36px;
+    margin: 0;
+    font-size: 2.5rem;
 }
 
-/* Navigation Styles */
 nav ul {
+    display: flex;
+    justify-content: center;
     list-style: none;
     padding: 0;
-    text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
+    font-size: 1.2rem;
     text-decoration: none;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
 }
 
 /* Section Styles */
 section {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 10%;
 }
 
-h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-/* Footer Styles */
 footer {
+    background-color: var(--primary-color);
+    color: white;
     text-align: center;
+    padding: 20px;
     margin-top: 40px;
-    padding: 10px;
-    background: #333;
-    color: #fff;
-    border-radius: 8px;
 }
 
-/* Button Styles */
+/* Links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* Buttons */
 button {
-    background-color: #333;
+    background-color: var(--secondary-color);
     color: white;
-    border: none;
     padding: 10px 20px;
-    cursor: pointer;
+    text-decoration: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #444;
+    background-color: var(--accent-color);
 }
