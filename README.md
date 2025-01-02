@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 💫 About Me:
 Hi there 👋<br><br> 🔭 I’m currently working on Python projects.<br> 🌱 I’m currently learning advanced Python concepts.<br> 👯 I’m looking to collaborate on Python-based machine learning or web development projects.<br> 🤔 I’m looking for help with optimizing Python code and learning new libraries.<br> 💬 Ask me about Python, automation, or machine learning!<br>📫 How to reach me: velagamprashanth@gmail.com<br> 😄 Pronouns: He/Him<br> ⚡ Fun fact: I love solving problems through code and making life easier with automation.<br>
 
@@ -16,3 +17,6 @@ Hi there 👋<br><br> 🔭 I’m currently working on Python projects.<br> 🌱 
 [![](https://visitcount.itsvg.in/api?id=Velagamprashanth&icon=0&color=0)](https://visitcount.itsvg.in)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+=======
+
+>>>>>>> 28b61cac4b3ebd0bc8d21b42bd44693fcb510c9e
