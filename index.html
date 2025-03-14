@@ -5,40 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prashanth Velagam - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0073e6;
+            --secondary-color: #f4f4f4;
+            --text-color: #333;
+            --dark-bg: #1e1e1e;
+            --dark-text: #f4f4f4;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        
+        header {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #ffcc00;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 2rem 0;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .project {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .project:hover {
+            transform: scale(1.05);
+        }
+        
+        #theme-toggle {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: white;
+        }
+        
+        .dark-mode {
+            background-color: var(--dark-bg);
+            color: var(--dark-text);
+        }
+        
+        .dark-mode .project {
+            background: #2e2e2e;
+            color: #f4f4f4;
+        }
+        
+        .dark-mode header {
+            background: #121212;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-
-    </header>             
-
-    <section id="contact">
-                    <h2>Contact Me</h2>
-                    <p>Feel free to reach out to me!</p>
-                    <ul>
-                        <li>Email: <a href="mailto:velagamprashanth@gmail.com">velagamprashanth@gmail.com</a></li>
-                        <li>LinkedIn: <a href="https://www.linkedin.com/in/prashanth-velagam-4b2a731a6/" target="_blank">LinkedIn Profile</a></li>
-                        <li>GitHub: <a href="https://github.com/Velagamprashanth" target="_blank">GitHub Profile</a></li>
-                    </ul>
-                </section>            </ul>
-        </nav>
+        <div class="container">
+            <h1>Prashanth Velagam</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">🌙</button>
+        </div>
     </header>
-
-    <section id="about">
+    
+    <section id="about" class="container">
         <h2>About Me</h2>
-        <p>Hello! I'm Prashanth Velagam, a web developer passionate about coding and building solutions that make life easier. I specialize in Python and web development, and I'm always eager to learn new technologies.</p>
-        <img src="Photo.jpeg" alt="Prashanth Velagam's photo" width="200">
-    <section id="projects">
+        <p>I'm Prashanth Velagam, a passionate web developer and data analyst skilled in Python, SQL, Tableau, and Power BI. I love building projects that solve real-world problems.</p>
+        <img src="Photo.jpeg" alt="Prashanth Velagam" class="profile-pic">
+    </section>
+    
+    <section id="projects" class="container">
         <h2>Projects</h2>
-        <p>Here are some of the projects I've worked on:</p>
+        <div class="projects-grid">
+            <div class="project">
+                <h3>Personal Portfolio</h3>
+                <p>A sleek portfolio built with HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/yourusername/project1" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Weather App</h3>
+                <p>A Python Flask app that provides real-time weather updates.</p>
+                <a href="https://github.com/yourusername/project2" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="resume" class="container">
+        <h2>Resume</h2>
+        <p>Download my resume below:</p>
+        <a href="Prashanth_Velagam_DA.pdf" download class="btn">Download Resume</a>
+    </section>
+    
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
         <ul>
-            <li><a href="https://github.com/yourusername/project1" target="_blank">Project 1: Personal Portfolio</a> - A personal portfolio built with HTML, CSS, and JavaScript.</li>
-            <li><a href="https://github.com/yourusername/project2" target="_blank">Project 2: Weather App</a> - A weather application built with Python and Flask.</li>
+            <li>Email: <a href="mailto:velagamprashanth@gmail.com">velagamprashanth@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/prashanth-velagam-4b2a731a6/" target="_blank">LinkedIn</a></li>
+            <li>GitHub: <a href="https://github.com/Velagamprashanth" target="_blank">GitHub</a></li>
         </ul>
     </section>
 
@@ -48,8 +164,19 @@
         <a href="Prashanth_Velagam_DA.pdf" download="Prashanth_Velagam_Resume">Download Resume</a>
     </section>
 
+    
     <footer>
         <p>&copy; 2024 Prashanth Velagam</p>
     </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const themeToggle = document.getElementById("theme-toggle");
+            themeToggle.addEventListener("click", () => {
+                document.body.classList.toggle("dark-mode");
+                themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+            });
+        });
+    </script>
 </body>
 </html>
